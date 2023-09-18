@@ -3,6 +3,7 @@ public class Main {
     public static void main(String[] args) {
         //Exemplo 1 - passo a passo
         double valorPrimitivo = 3.14;
+        System.out.println(valorPrimitivo);
         Double valorWrapper = Double.valueOf(valorPrimitivo);
         System.out.println(valorWrapper);
 
