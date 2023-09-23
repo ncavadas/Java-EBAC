@@ -1,0 +1,2 @@
+public class AExercicioMOD10 {
+}
