@@ -66,36 +66,44 @@ public class Aula1_1 {
     }*/
 
 //Determinar o Tipo de Triângulo: Dado o comprimento dos três lados de um triângulo, escreva um programa que determine se ele é equilátero, isósceles ou escaleno.
-        Scanner teclado = new Scanner(System.in);
+        /*Scanner teclado = new Scanner(System.in);
         System.out.println("Tamanho do primeiro lado:");
         double ladoa = teclado.nextDouble();
         System.out.println("Tamanho do segundo lado:");
         double ladob = teclado.nextDouble();
         System.out.println("Tamanho do terceiro lado:");
         double ladoc = teclado.nextDouble();
-        
+
+        if (ladoa == ladob && ladob == ladoc) {
+            System.out.println("Triângulo equilátero.");
+        } else if (ladoa == ladob || ladoa == ladoc || ladob == ladoc) {
+            System.out.println("Triângulo isósceles.");
+        } else {
+            System.out.println("Triângulo escaleno.");
+        }*/
 
 
 //Calculadora de Juros Compostos: Crie um programa que calcule o montante final de um investimento com base no principal, taxa de juros e tempo de investimento. Use if encadeados para calcular os juros compostos com diferentes taxas de juros.
 
+        /*Scanner teclado = new Scanner(System.in);
+        System.out.print("Informe o valor inicial do investimento: ");
+        double principal = teclado.nextDouble();
+        System.out.print("Informe a taxa de juros anual (%): ");
+        double taxaDeJurosAnual = teclado.nextDouble() / 100.0;
+        System.out.print("Informe o tempo de investimento (em anos): ");
+        int tempoDeInvestimento = teclado.nextInt();
 
-//Conversor de Unidades: Crie um programa que converta entre diferentes unidades de medida, como Celsius para Fahrenheit, quilômetros para milhas, ou libras para quilogramas. Use if encadeados para lidar com diferentes tipos de conversões.
-
-
-//Verificador de Número Primo: Escreva um programa que determine se um número é primo ou não. Use if encadeados para verificar se o número atende a vários critérios de divisibilidade.
-
-
-//Verificador de Ano Bissesto: Crie um programa que determine se um ano é bissexto ou não. Anos bissextos são divisíveis por 4, mas não por 100, a menos que sejam divisíveis por 400.
-
-
-// Calculadora de Frete: Crie um programa que calcule o custo de frete com base na distância e no peso de um pacote. Use if encadeados para lidar com diferentes taxas de frete com base na distância e no peso.
-
-
-//Classificação de Alunos: Crie um programa que receba as notas de um aluno em várias disciplinas e calcule sua média. Em seguida, atribua uma classificação com base na média (ex: A, B, C, D, F) usando if encadeados.
-
-
-//Jogo de Adivinhação: Implemente um jogo simples de adivinhação em que o programa gera um número aleatório e o jogador tenta adivinhar o número. Use if encadeados para dar dicas ao jogador (maior, menor, certo).
-
-
+        double montanteFinal = principal;
+        for (int ano = 1; ano <= tempoDeInvestimento; ano++) {
+            if (ano <= 3) {
+                montanteFinal *= (1 + taxaDeJurosAnual);
+            } else if (ano <= 5) {
+                montanteFinal *= (1 + taxaDeJurosAnual * 1.5);
+            } else {
+                montanteFinal *= (1 + taxaDeJurosAnual * 2.0);
+            }
+        }
+        teclado.close();
+        System.out.println("O montante final após " + tempoDeInvestimento + " anos é: " + montanteFinal);*/
     }
-
+}
