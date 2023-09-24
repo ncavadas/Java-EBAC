@@ -1,5 +1,5 @@
 import javax.sound.midi.Soundbank;
-import java.util.Scanner;
+
 public class Aula1 {
     public static void main(String[] args) {
     //Exercícios de if, if else, else
