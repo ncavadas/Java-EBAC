@@ -18,7 +18,7 @@ public class AExercicioMOD10 {
         if (media>=7){
             System.out.println("Aprovado!!");
         }
-        else if (media>=4) {
+        else if (media>=5) {
             System.out.println("Em recuperação");
         }
         else {
