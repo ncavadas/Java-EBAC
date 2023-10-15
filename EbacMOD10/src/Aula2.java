@@ -85,7 +85,35 @@ public static void main(String[] args) {
 
     scanner.close();*/
 //8. Imprima os primeiros 10 números da sequência de Fibonacci.
+
+    /*Scanner teclado = new Scanner(System.in);
+    System.out.println("Digite um número maior do que 3:");
+    int n = teclado.nextInt();
+    int pri = 0;
+    int seg = 1;
+    int ter = pri+seg;
+    System.out.print(pri+","+seg+","+ter);
+    for(int i = 3; i <= n ;i++){
+        pri = seg;
+        seg = ter;
+        ter = pri+seg;
+        System.out.print(","+ter);
+    }
+
+
+    teclado.close();*/
 //9. Imprima os números primos de 1 a 50.
+
+    for (int i = 1; i <= 50 ; i++){
+        if(i == 2 ||i == 3||i == 5||i == 7){
+            System.out.println(i+" é primo");
+        } else if (i == 1||i%2 == 0||i%3 == 0||i%5 == 0||i%7 == 0) {
+            System.out.println(i+" não primo");
+        }
+        else {
+            System.out.println(i+" é primo");
+        }
+    }
 //10. Imprima os múltiplos de 3 de 3 a 30.
 
 
