@@ -1,11 +1,11 @@
-public class PessoaJurídica extends Pessoa{
+public class PessoaJuridica extends Pessoa{
 
     //Variáveis
     private String cnpj;
 
     //Construtor
-    public PessoaJurídica(){}
-    public PessoaJurídica(String $nome,String $cnpj){
+    public PessoaJuridica(){}
+    public PessoaJuridica(String $nome,String $cnpj){
         super.setNome($nome);
         this.cnpj = $cnpj;
     }
