@@ -6,7 +6,7 @@ public class Exercicio2_mod11 {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
 
-
+        //Map<String, String> grupoFeminino = new TreeMap<>(); colocando a colection map no inicio vc tem maior utilização no codigo numa futura mudança
         TreeMap<String, String> grupoFeminino = new TreeMap<>();
         TreeMap<String, String> grupoMasculino = new TreeMap<>();
 

@@ -1,4 +1,4 @@
-abstract class Pessoa {
+public abstract class Pessoa {
     //Variáveis
     private String nome;
 
