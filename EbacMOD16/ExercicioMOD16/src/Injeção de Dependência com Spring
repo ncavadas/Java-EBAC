@@ -1,0 +1,50 @@
+
+Ex: 1
+
+public class ClienteService {
+
+    private ClienteRepository repository;
+
+    public ClienteService() {
+        this.repository = new ClienteRepositoryJdbc(); // Injeção manual
+    }
+
+    public List<Cliente> buscarTodos() {
+        return repository.findAll();
+    }
+}
+
+
+
+
+
+
+Ex: 2
+
+    public class ClienteService {
+
+        @Autowired
+        private ClienteRepository repository;
+
+        public List<Cliente> buscarTodos() {
+            return repository.findAll();
+        }
+    }
+
+    @Repository
+    public interface ClienteRepository {
+
+        List<Cliente> findAll();
+    }
+
+    @Component
+    public class ClienteRepositoryJdbc implements ClienteRepository {
+
+        // Implementação do método findAll() usando JDBC
+    }
+
+    @Component
+    public class ClienteRepositoryJpa implements ClienteRepository {
+
+        // Implementação do método findAll() usando JPA
+    }
